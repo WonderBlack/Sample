@@ -1,7 +1,9 @@
+
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class KokoDoko {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 		String s = stdIn.nextLine();// マップの横幅w、マップの縦幅h、移動ログの個数n
@@ -32,6 +34,7 @@ public class Main {
 		}
 
 		for (int i = 0; i < n; i++) {// 移動ログの個数n分移動
+			
 			if (way[i].equals("U")) {// もし上に動いたら y+方向
 				for (int j = 0; j < dist[i]; j++) {// 移動距離dist[i]分動く
 					y++;
@@ -64,6 +67,7 @@ public class Main {
 					}
 				}
 			}
+			
 		}
 		
 		System.out.println(x + " " + y);
